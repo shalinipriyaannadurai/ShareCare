@@ -1,0 +1,29 @@
+<html> 
+ <head> 
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.8.17/themes/base/jquery-ui.css" />
+ <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+ <script src="//maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=fr" type="text/javascript"></script>
+ <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+ <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js" type="text/javascript"></script>
+ <title>Application mobile - Démo</title> 
+</head> 
+<body> 
+<div data-role="page" id="address">
+
+ <div data-role="header" data-position="inline">
+ <a data-rel="back" data-icon="arrow-l">Retour</a>
+ <h1>Démonstration</h1>
+ </div><!-- /header -->
+
+ <div data-role="content">
+ <p>Adresse</p>
+ <label for="searchAddress" class="ui-hidden-accessible">Saisir une adresse :</label>
+ <input type="search" name="address" id="searchAddress" value="" placeholder="Saisir une adresse..."/>
+ <p><a data-rel="back" data-role="button" data-icon="check">Valider</a></p>
+ </div><!-- /content -->
+
+</body>
+</html>

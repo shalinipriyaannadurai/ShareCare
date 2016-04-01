@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"/>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+  </script> 
+
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+
+  <!-- Adding custom CSS generated from theme roller -->
+
+  <link rel="stylesheet" href="css/greentheme.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+
+  
+  
+
+
+
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+  <script src="js/jquery.geocomplete.min.js"></script>
+
+  <script src = "js/giveaway.js" ></script>
+
+
+</head>
+<body>
+<div data-role="page" id="category">
+<div data-role="header">
+<a data-role="button" data-icon="back" id="backBtn" data-rel="back">Back</a>
+<h1>Categories</h1>
+</div>
+    <div data-role="main" class="ui-content" id="findcontent">
+
+      <ul data-theme = "a" data-role="listview" id = "category" data-inset = "true">
+        <li>
+            <a data-rel="back">         </a>
+        </li>
+      </ul>
+
+
+    </div>
+
+    <div data-role="footer"  data-id="foo1" data-position="fixed">
+      <div data-role="navbar">
+        <ul >
+          <li><a href="find_stuff.html" data-icon="grid" data-iconpos="left" data-theme="a" class="ui-btn-active ui-state-persist">Find Stuff</a></li>
+          <li><a href="give_away.html" data-icon="grid" data-iconpos="left" data-theme="a"  >Give Away</a></li>
+          <li><a href="my_stuff.html"  data-icon="grid" data-iconpos="left" data-theme="a"  >My Stuff</a></li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+  </div> 
+    </body>
+</html>
+    

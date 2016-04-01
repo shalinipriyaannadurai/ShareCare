@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"/>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+  </script> 
+
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+
+  <!-- Adding custom CSS generated from theme roller -->
+
+  <link rel="stylesheet" href="css/greentheme.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+
+<!-- In this we circular image for listview-->
+   <link rel="stylesheet" href="css/style.css" />
+  
+  
+
+
+
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+  <script src="js/jquery.geocomplete.min.js"></script>
+
+
+<script src = "js/Basejs.js" ></script>
+<script src = "js/findstuff.js" ></script>
+  <script src = "js/mystuff.js" ></script>
+  <script src = "js/stuffs.js" ></script>
+<!--  <script src = "js/locationpicker.js" ></script>-->
+  <script src = "js/mystuffdetails.js" ></script>
+  <script src = "js/giveaway.js" ></script>
+  <script src = "js/itemdetail.js" ></script>
+
+
+</head>
+<body>
+
+
+  <div data-role="page" id="find_stuff">
+  <!--   <div data-role="header" data-position="fixed" style="height=124px;">  -->
+  <div data-role="header"  data-position="fixed"  style="bottom: 0px;  height:64px;"  inline =""  role="banner">
+    <div data-role = "navbar">
+      <h3 style="text-align: center; " >Find Stuff</h3> 
+    </div>
+    </div>
+      
+
+    <div data-role="main" class="ui-content" id="findcontent" >
+ 
+<div style="margin-bottom: 70px;">
+<div  class="ui-block-a" style="width:90%">
+<!--<input  id = "searchlocationBtn"  type="button" value="Search Place"/>-->
+    <input  type="text" name="location" id="location" class="location" placeholder="Search your location.." value="" data-clear-btn= "true"></input>
+
+</div>
+<div  class="ui-block-b" style="width:10%" >
+    <div style="float: right;">
+<!--    <input id = "currentLocBtn" class="ui-btn ui-shadow ui-icon-location ui-btn-icon-notext"></input>-->
+    <input id = "findCurrentLocBtn" type ="button" style ="float"data-icon = "location" data-iconpos ="notext"></input>
+        </div>
+
+</div>
+</div>
+
+      <ul data-theme = "a" data-role="listview" id = "listItem" data-inset = "true">
+        <li>
+          <a href="#">
+
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+
+    <div data-role="footer"  data-id="foo1" data-position="fixed">
+      <div data-role="navbar">
+        <ul >
+          <li><a href="find_stuff.html"  data-icon="grid" data-iconpos="left" data-theme="a" class="ui-btn-active ui-state-persist">Find Stuff</a></li>
+          <li><a href="give_away.html" data-icon="grid" data-iconpos="left" data-theme="a"  >Give Away</a></li>
+          <li><a href="my_stuff.html"  data-icon="grid" data-iconpos="left" data-theme="a"  >My Stuff</a></li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+  </div> 
+
+</body>
+</html>
+

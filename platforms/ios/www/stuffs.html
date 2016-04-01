@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"/>
+
+
+  <!-- Include Custom CSS create using Theme Roller -->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+ <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="js/jquery.imageCaching.min.js"></script>
+<script src="js/jquery.imageCaching.js"></script>
+<!--<script src="js/Basejs.js" ></script>-->
+<!-- <script src="js/Basejs.js" ></script> -->
+<!--<script src = "js/findstuff.js" ></script>-->
+<!--<script src = "js/stuffs.js" ></script>-->
+<!-- <script src = "js/mystuff.js" ></script> -->
+
+
+ 
+
+ </head>
+
+
+
+
+<body>
+
+<div data-role="page" id="stuffs">
+<!-- <div data-role="header" data-position="fixed">
+  <h1>Stuffs</h1>
+  <a id="backedBtn"  class="ui-btn-left">Back</a>
+    <div data-role="navbar">
+     
+    </div>
+  </div> -->
+
+   <div data-role="header"  data-position="fixed"  style="bottom: 0px;  height:64px;"  inline =""  role="banner">
+    <div data-role = "navbar">
+
+      <h3  style="text-align: center; " >Stuffs</h3> 
+        <a id="backedBtn" style= "margin-top:15px !important;" class="ui-btn-left">Back</a>
+    </div>
+    </div>
+
+
+
+
+  <div data-role="main" class="ui-content" id= "stuffContent">
+
+   <ul data-theme = "a" data-role="listview" id = "stufflistItem" data-inset = "true">
+     <li>
+        <a href="#">
+    
+        
+        </a>
+     </li>
+</ul>
+</div>
+    <div data-role="footer"  data-id="foo1" data-position="fixed">
+      <div data-role="navbar">
+        <ul >
+          <li><a href="find_stuff.html"  data-icon="grid" data-iconpos="left" data-theme="a" class="ui-btn-active ui-state-persist">Find Stuff</a></li>
+          <li><a href="give_away.html" data-icon="grid" data-iconpos="left" data-theme="a"  >Give Away</a></li>
+          <li><a href="my_stuff.html"  data-icon="grid" data-iconpos="left" data-theme="a"  >My Stuff</a></li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+</div> 
+
+</body>
+</html>
+

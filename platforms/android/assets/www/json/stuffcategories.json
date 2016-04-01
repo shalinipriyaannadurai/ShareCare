@@ -1,0 +1,22 @@
+{
+
+	"status" : 200,
+	"categories" :[
+	{
+		"imageUrl" : "http://transcend.sibmpune.edu.in/images/event/divided.jpg",
+		"name" : "Food",
+		"id" : 1
+	},
+	{
+		"imageUrl" : "http://www.mangalorean.com/wp-content/media/2015/11/VKSS-2015-4.jpg",
+		"name" : "Pets",
+		"id" : 2
+	},
+	{
+	    "imageUrl" : "http://www.tursvodka.ru/upload/tursvodka/tourism_hotel_photo/india/mangalore/gateway_hotel_old_port_road_mangalore/gateway_hotel_old_port_road_mangalore_8_thumbnail.jpg",
+		"name" : "Clothing",
+		"id" : 3
+	}
+			]
+
+}

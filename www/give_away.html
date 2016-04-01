@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+<script src="js/jquery.geocomplete.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+
+<!--<script src = "js/giveaway.js" ></script>-->
+<script>
+
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+    $.mobile.allowCrossDomainPages =true;
+  });
+    
+</script>
+
+</head>
+
+
+
+
+<body>
+
+<div data-role="page" id="give_away" >
+    
+    <div data-role="header"  data-position="fixed"  style="bottom: 0px;  height:64px;"  inline =""  role="banner">
+    <div data-role = "navbar">
+      <a data-role="button"  id="resetBtn" style= "margin-top:15px !important;" class="ui-btn-left">Reset</a>
+
+      <h3 style="text-align: center; ">Give Away</h3>
+            
+        <button type ="submit" form="giveaway_form" class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all"  style= "margin-top:15px !important;">Save</button>
+
+
+    </div>
+    </div>
+
+<div data-role = "main"  class="ui-content">
+<!--      <span class="ui-btn ui-corner-all fileinput-button">-->
+<!--          <span><img style="width:100%;height:100%;border-radius: 50%; " id ="yourimage" alt=""></span>-->
+<!--          <input type="file" capture="camera" accept="image/*" id="takePictureField" data-role="none"/>-->
+<!--      </span>-->
+<div>
+<form name="giveaway_form" id ="giveaway_form" action="">
+  <fieldset>
+<div class="fileUpload">
+<input id="uploadBtn" type="file" name="file" class="upload" capture ="camera" accept="image/*" /> 
+<img src="images/camericon.png" alt="some_text" id ="yourimage" class="camerauploadicon" />
+
+</div>
+
+<!--<input  id = "selectCatBtn"  type="button" value="Search Category" />-->
+<select id = "category" name="category" form="giveaway_form">
+  <option value = 0 >Search Category</option>
+</select>
+<!--<a href="#category" class="ui-btn ui-corner-all" id="selectCatBtn">Search Category</a>-->
+
+<input type ="text" name = "itemname" placeholder="Enter the stuff you want to give away" id = "itemname"/>
+<div style="margin-bottom: 70px;">
+<div  class="ui-block-a" style="width:90%">
+<!--<input  id = "searchlocationBtn"  type="button" value="Search Place"/>-->
+    <input  type="text" name="location" id="searchlocation" class="location" placeholder="Search your location.." data-clear-btn= "true">
+
+</div>
+<div  class="ui-block-b" style="width:10%" >
+        <div style="float: right;">
+    <a id = "currentLocBtn" class="ui-btn ui-shadow ui-btn-inline ui-corner-all ui-icon-location ui-btn-icon-notext"></a>
+    </div>
+</div>
+</div>
+    <!-- <input  id = "searchlocationBtn1"  type="button" value="Search Place"/> -->
+<input type ="text" name = "name" placeholder="Your Name" value="" id = "name"/>
+<input type ="text" name = "email" placeholder="Email" value="" id = "email"/>
+<input type ="text" name = "phone" placeholder="Contact Number" value="" id = "phone"/>
+
+</fieldset>
+</form>
+</div>
+
+
+
+
+<div data-role="footer"  data-id="foo1" data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li><a href="index.html" data-icon="grid" data-iconpos="left" data-theme="a" >Find Stuff</a></li>
+<li><a href="give_away.html" data-icon="grid" data-iconpos="left" data-theme="a" class="ui-btn-active ui-state-persist">Give Away</a></li>
+<li><a href="my_stuff.html" data-icon="grid" data-iconpos="left" data-theme="a" >My Stuff</a></li>
+</ul>
+</div><!-- /navbar -->
+</div><!-- /footer -->
+</div>
+</div> 
+
+
+
+</body>
+</html>
+
