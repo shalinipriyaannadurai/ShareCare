@@ -49,10 +49,6 @@
             window.URL = window.URL;
         }
 
-
-   
-
-
         $(document).on('click', '#resetBtn', function(e) {
                     console.log("reset ");
             $('#giveaway_form')[0].reset();

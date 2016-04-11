@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"/>
+
+
+  <!-- Include Custom CSS create using Theme Roller -->
+  <!-- <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"> -->
+<!--   <link rel="stylesheet" href="css/atheme.css" />
+  <link rel="stylesheet" href="css/atheme.min.css" /> -->
+
+
+
+  <!-- Include jQuery Mobile stylesheets -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+ <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="js/jquery.imageCaching.min.js"></script>
+<script src="js/jquery.imageCaching.js"></script>
+
+
+<script src = "js/mystuffdetails.js" ></script> 
+
+</head>
+
+
+<body>
+
+<div data-role="page" id="my_stuff_details">
+
+<!--   <div data-role="header">
+  <h1 id="headertitle"></h1>
+ 
+  <div data-role="navbar">
+     
+    </div>
+  </div> -->
+
+ <div data-role="header"  data-position="fixed"  style="bottom: 0px;  height:64px;"  inline =""  role="banner">
+    <div data-role = "navbar">
+      <h3 id="headertitle" style="text-align: center; " ></h3> 
+        <a id="doneBtn"  style= "margin-top:15px !important;"  class="ui-btn-left" >Back</a>
+    </div>
+    </div>
+
+
+
+ <div data-role="main" class="ui-content" id="maincontent">
+
+
+<div style="text-align: center;overflow: hidden; " ><img class= "circularFullImage" id = "fullImage" src="" alt="image" ></div>
+
+
+
+<ul id="mylist" data-role="listview"  data-inset="true" >
+
+  <li >
+
+    <div  class="ui-block-a" style="width:15%">
+        <div class="ui-block-a"><h3>Uploaded Date :</h3></div>
+      </div>
+      <div  class="ui-block-b" style="width:85%" >
+        <div class="ui-block-b"><p id= "uploadedDate"></p></div>
+      </div>
+</li>
+<li >
+   <div  class="ui-block-a" style="width:15%">
+        <div class="ui-block-a"><h3>Location :</h3></div>
+      </div>
+      <div  class="ui-block-b" style="width:85%" >
+        <div class="ui-block-b"><p id= "mystufflocation"></p></div>
+      </div>
+</li>
+</ul>
+
+<!-- 
+<div class="ui-grid-a" >
+<div class="ui-block-a"><input type="text" /></div>
+<div class="ui-block-b"><input type="text" /></div>
+</div> -->
+
+</div>
+ 
+ <div data-role="footer" data-position="fixed">
+
+  <button style="width:100%;" id = "takenaway" class="ui-btn">Taken Away</button>
+
+  </div>
+
+</div> 
+
+</body>
+</html>
+

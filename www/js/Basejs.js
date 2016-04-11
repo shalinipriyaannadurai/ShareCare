@@ -36,8 +36,35 @@ var errorImage = 'images/camericon.png';
 //});
 
 $(document).ajaxStart(function(){
-        $.mobile.loading("show");
-    });
+                      $.mobile.loading("show");
+                      });
 $(document).ajaxComplete(function(){
-        $.mobile.loading("hide");
+                         $.mobile.loading("hide");
+                         });
+
+$(document).on("pagebeforeshow", "#find_stuff", function(){
+               if(!localStorage.login_userID){
+               $.mobile.changePage('login.html', {transition: 'slide'});
+               }
+
 });
+$(document).ready(function(){
+                  
+                  window.fbAsyncInit = function() {
+                  FB.init({
+                          appId      : '1716442435260319',
+                          xfbml      : true,
+                          version    : 'v2.5'
+                          });
+                  };
+                  
+                  (function(d, s, id){
+                   var js, fjs = d.getElementsByTagName(s)[0];
+                   if (d.getElementById(id)) {return;}
+                   js = d.createElement(s); js.id = id;
+                   js.src = "//connect.facebook.net/en_US/sdk.js";
+                   fjs.parentNode.insertBefore(js, fjs);
+                   }(document, 'script', 'facebook-jssdk'));
+                  
+                  
+                  });

@@ -1,0 +1,31 @@
+{
+
+	"status" : 200,
+	"stuffs" :[
+	{
+		"imageUrl" : "http://www.bajrangautoparts.com/cms/uploaded_files/brand-models/Ashok-Leyland-Ecomet.JPG",
+		"name" : "Nakkur",
+		"id" : 11,
+		"timeStamp" : "02 jun 1988"
+	},
+	{
+		"imageUrl" : "http://www.mangalorean.com/wp-content/media/2015/11/VKSS-2015-4.jpg",
+		"name" : "Mandya",
+		"id" : 12,
+		"timeStamp" : "23 jun 2000"
+	},
+	{
+		"imageUrl" : "http://www.tursvodka.ru/upload/tursvodka/tourism_hotel_photo/india/mangalore/gateway_hotel_old_port_road_mangalore/gateway_hotel_old_port_road_mangalore_8_thumbnail.jpg",
+		"name" : "Kudla",
+		"id" : 13,
+		"timeStamp" : "02 jun 1988"
+	},
+	{
+		"imageUrl" : "http://transcend.sibmpune.edu.in/images/event/divided.jpg",
+		"name" : "India",
+		"id" : 14,
+		"timeStamp" : "23 jun 1980"
+	}
+	]
+      
+}

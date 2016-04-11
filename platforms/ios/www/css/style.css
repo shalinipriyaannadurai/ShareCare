@@ -67,3 +67,8 @@
     height: 100%;
     text-align: center;
 }
+
+.ui-icon-fp-logo {
+    background-image: url("images/fp.png");
+    background-size: 32px 32px;
+}
